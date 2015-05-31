@@ -1,0 +1,2 @@
+echo NICK inceptionBot
+echo USER inceptionBot
