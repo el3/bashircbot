@@ -1,0 +1,2 @@
+# bashircbot
+irc bot
