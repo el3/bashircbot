@@ -1,7 +1,7 @@
 #!/bin/bash
 
 . .bot.properties
-input="/home/ubuntu/workspace/.bot.cfg"
+input=".bot.cfg"
 echo "NICK $nick" > $input 
 echo "USER $user" >> $input
 joined="false"
@@ -39,8 +39,8 @@ do
       
       if [ "$prefix" = '#' ]
       then
-        echo 1 >> /home/ubuntu/workspace/.output.txt
-        eval $cmd > /home/ubuntu/workspace/.output.txt
+        echo 1 >> .output.txt
+        eval $cmd > .output.txt
         while read p; do
             if [ $i -lt 10 ]
               then
@@ -48,7 +48,7 @@ do
               sleep 0.8
             fi
             i=$[$i+1]
-        done </home/ubuntu/workspace/.output.txt
+        done <.output.txt
       fi
 
     ;;
