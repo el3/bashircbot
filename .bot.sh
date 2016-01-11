@@ -34,7 +34,7 @@ do
 
       echo "$res"
       
-      ./.rec.sh "$res"
+      ./.rec.sh "$res"  # pass the msg to .rec.sh
 
     ;;
 
