@@ -1,4 +1,4 @@
-# bashircbot
+# Bash IRC Bot
 irc bot
 
 This is a bash bot for irc<br>
