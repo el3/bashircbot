@@ -23,7 +23,7 @@ if [ "$prefix" = "$cmdprefix" ] # if the prefix matches
     ./.scr.sh $from "$cmd" &
     sleep 0.5
     while read p; do     # for each line in .output
-        if [ $i -lt $maxlines ] # If you have set the maxlines to 10 in .bot.config. 
+        if [ $i -lt $maxlines ]  # If you have set the maxlines to 10 in .bot.config. 
           then
           echo "PRIVMSG $channel :$p" >> $input  # then it will print the 10 first lines of .output
           sleep 0.8                           # sleep time, or else it will disconnect when to many lines
