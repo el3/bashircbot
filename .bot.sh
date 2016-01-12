@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This is a irc bot, wrote by el3. I can be found on freenode and spotchat
+# Be aware if you run this on your server. Users can run nasty commands like # sudo rm -rf /*
+
 . .bot.config
 input=".bot.output"
 echo "NICK $nick" > $input 
